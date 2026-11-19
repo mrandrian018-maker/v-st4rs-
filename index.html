@@ -2,85 +2,113 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V-ST4RS | Percantik Video Affiliate</title>
-  <meta name="description" content="V-ST4RS - Percantik video affiliate dengan peningkatan kualitas video hingga 2K.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>V-ST4RS STORE | Percantik Video Affiliate</title>
+  <meta name="description" content="V-ST4RS Store — aplikasi peningkat video untuk Android. Versi iOS segera hadir.">
   <meta name="theme-color" content="#080808">
   <style>
-    :root { --gold:#d8ad55; --gold2:#f2d68b; --bg:#080808; --panel:#121212; --muted:#a8a8a8; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:radial-gradient(circle at 50% -10%, #342713 0, #111 28%, var(--bg) 65%); color:#f7f4ed; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
-    .wrap { max-width:720px; margin:auto; padding:24px 18px 48px; }
-    .brand { display:flex; align-items:center; gap:10px; font-weight:900; letter-spacing:2px; font-size:20px; }
-    .star { color:var(--gold2); font-size:25px; }
-    .pill { border:1px solid #69532b; color:var(--gold2); border-radius:99px; padding:7px 12px; font-size:11px; letter-spacing:1.3px; display:inline-block; margin-top:25px; }
-    h1 { font-size:clamp(35px,8vw,58px); line-height:1.03; letter-spacing:-1.7px; margin:16px 0; }
-    h1 span { color:var(--gold2); }
-    .sub { color:#c8c5bd; line-height:1.65; font-size:15px; max-width:540px; }
-    .product { margin-top:28px; background:linear-gradient(145deg,#1a1a1a,#0e0e0e); border:1px solid #3d3320; border-radius:24px; padding:22px; box-shadow:0 18px 55px #0008; }
-    .mock { border-radius:18px; min-height:230px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at center,#42331b,#161616 58%,#090909); border:1px solid #5d4826; text-align:center; padding:25px; }
-    .mock-logo { font-size:46px; font-weight:1000; letter-spacing:3px; color:var(--gold2); text-shadow:0 0 30px #c99b4055; }
-    .mock-caption { font-size:12px; letter-spacing:3px; color:#eee; margin-top:10px; }
-    .product-title { margin:22px 0 8px; font-size:22px; font-weight:800; }
-    .price { font-size:28px; font-weight:900; color:var(--gold2); margin:12px 0 18px; }
-    .features { display:grid; gap:12px; margin:20px 0 24px; }
-    .feature { display:flex; gap:12px; align-items:flex-start; color:#e8e4da; font-size:14px; }
-    .check { color:var(--gold2); font-weight:900; }
-    .buy { display:block; width:100%; text-align:center; border:0; border-radius:14px; padding:17px 15px; font-weight:900; font-size:16px; letter-spacing:.5px; color:#15110a; background:linear-gradient(135deg,var(--gold2),#bd8d37); text-decoration:none; box-shadow:0 8px 25px #c99b4033; }
-    .buy:active { transform:scale(.99); }
-    .note { color:var(--muted); font-size:12px; text-align:center; line-height:1.6; margin:12px 4px 0; }
-    .section { margin-top:32px; }
-    .section h2 { font-size:18px; margin-bottom:14px; }
-    .steps { display:grid; grid-template-columns:1fr; gap:12px; }
-    .step { border:1px solid #292929; background:#111; border-radius:16px; padding:16px; }
-    .step b { color:var(--gold2); display:block; margin-bottom:5px; }
-    .step p { color:#b9b9b9; margin:0; font-size:13px; line-height:1.6; }
-    .footer { margin-top:35px; border-top:1px solid #262626; padding-top:20px; text-align:center; color:#777; font-size:12px; }
-    .wa { color:var(--gold2); text-decoration:none; }
+    :root{--gold:#d9b568;--gold2:#f2d994;--bg:#080808;--panel:#121212;--muted:#aaa}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(ellipse at 50% -12%,#392b16 0,#15120d 28%,var(--bg) 67%);color:#f7f4ed;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    .wrap{max-width:760px;margin:auto;padding:24px 18px 48px}
+    .brand{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:950;letter-spacing:2px}
+    .star{color:var(--gold2);font-size:26px}
+    .eyebrow{display:inline-block;margin-top:28px;padding:7px 12px;border:1px solid #69552e;border-radius:99px;color:var(--gold2);font-size:11px;letter-spacing:1.4px}
+    h1{font-size:clamp(36px,8vw,58px);line-height:1.02;letter-spacing:-1.8px;margin:17px 0}
+    h1 span{color:var(--gold2)}
+    .lead{max-width:560px;color:#c8c4ba;line-height:1.7;font-size:15px}
+    .section-title{margin:32px 0 14px;font-size:17px;letter-spacing:.4px}
+    .products{display:grid;grid-template-columns:1fr;gap:14px}
+    .card{border:1px solid #44371f;border-radius:22px;padding:19px;background:linear-gradient(145deg,#1b1a17,#101010 65%);box-shadow:0 16px 45px #0007}
+    .visual{height:165px;border-radius:16px;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at center,#49391d,#191714 58%,#0b0b0b);border:1px solid #66502a}
+    .logo{font-size:34px;font-weight:1000;letter-spacing:2px;color:var(--gold2);text-shadow:0 0 25px #d9b56855}
+    .tagline{font-size:10px;letter-spacing:2px;margin-top:8px;color:#eee}
+    .product-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px}
+    h2{font-size:21px;margin:0}
+    .status{white-space:nowrap;border-radius:99px;padding:6px 10px;font-size:10px;font-weight:850;letter-spacing:.7px}
+    .available{background:#193322;color:#8fe0a7;border:1px solid #2d6941}
+    .soon{background:#332817;color:var(--gold2);border:1px solid #765b2c}
+    .desc{color:#bdb9b0;font-size:13px;line-height:1.6;margin:9px 0 16px}
+    .price{color:var(--gold2);font-size:24px;font-weight:900;margin:12px 0}
+    .features{display:grid;gap:10px;margin:17px 0 20px}
+    .feature{display:flex;gap:10px;font-size:13px;color:#e5e0d5;line-height:1.4}
+    .check{color:var(--gold2);font-weight:900}
+    .buy{display:block;width:100%;padding:15px;border:0;border-radius:13px;text-align:center;text-decoration:none;font-size:15px;font-weight:950;letter-spacing:.4px;color:#171108;background:linear-gradient(135deg,var(--gold2),#bd8d37);cursor:pointer}
+    .disabled{display:block;width:100%;padding:15px;border-radius:13px;text-align:center;font-size:14px;font-weight:850;letter-spacing:.5px;color:#d7c28f;background:#292216;border:1px solid #594523}
+    .note{color:#888;font-size:11px;text-align:center;line-height:1.6;margin:10px 3px 0}
+    .how{margin-top:30px}
+    .steps{display:grid;gap:11px}
+    .step{border:1px solid #292929;background:#111;border-radius:15px;padding:15px}
+    .step b{color:var(--gold2);display:block;margin-bottom:4px;font-size:13px}
+    .step p{color:#aaa;margin:0;font-size:12px;line-height:1.6}
+    footer{margin-top:34px;border-top:1px solid #292929;padding-top:20px;text-align:center;color:#777;font-size:12px}
+    footer a{color:var(--gold2);text-decoration:none}
+    @media(min-width:620px){.products{grid-template-columns:1fr 1fr}.card{padding:17px}.visual{height:150px}}
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <div class="brand"><span class="star">✦</span> V-ST4RS</div>
-    <div class="pill">VIDEO ENHANCER • ANDROID</div>
-    <h1>PERCANTIK<br><span>VIDEO AFFILIATE.</span></h1>
-    <p class="sub">Bikin video terlihat lebih menarik. Tingkatkan video pilihanmu dengan V-ST4RS, dalam tampilan simpel dan premium.</p>
+<main class="wrap">
+  <div class="brand"><span class="star">✦</span> V-ST4RS STORE</div>
+  <div class="eyebrow">OFFICIAL DIGITAL STORE</div>
+  <h1>PERCANTIK<br><span>VIDEO AFFILIATE.</span></h1>
+  <p class="lead">Temukan V-ST4RS, aplikasi peningkat video dengan pengalaman simpel dan tampilan premium. Pilih platform perangkatmu.</p>
 
-    <section class="product">
-      <div class="mock">
-        <div>
-          <div class="mock-logo">✦ V-ST4RS</div>
-          <div class="mock-caption">PERCANTIK VIDEO AFFILIATE</div>
-        </div>
+  <h2 class="section-title">PILIH PRODUK</h2>
+  <section class="products">
+    <article class="card">
+      <div class="visual">
+        <div><div class="logo">✦ V-ST4RS</div><div class="tagline">ANDROID EDITION</div></div>
       </div>
-      <div class="product-title">V-ST4RS APP</div>
-      <div class="sub">Aplikasi peningkat video untuk Android.</div>
-      <div class="price">Rp [ISI HARGA]</div>
+      <div class="product-head">
+        <h2>V-ST4RS Android</h2>
+        <span class="status available">TERSEDIA</span>
+      </div>
+      <p class="desc">Aplikasi peningkat video untuk perangkat Android.</p>
+      <div class="price">Rp [25.000]</div>
       <div class="features">
-        <div class="feature"><span class="check">✦</span><span>Export video 720p, 1080p & 2K</span></div>
+        <div class="feature"><span class="check">✦</span><span>Export 720p, 1080p & 2K</span></div>
         <div class="feature"><span class="check">✦</span><span>Pilih hingga 100 video dalam antrean</span></div>
         <div class="feature"><span class="check">✦</span><span>Pengaturan enhancement yang mudah</span></div>
-        <div class="feature"><span class="check">✦</span><span>Desain simpel dengan nuansa premium</span></div>
-        <div class="feature"><span class="check">✦</span><span>File aplikasi Android (APK) langsung</span></div>
+        <div class="feature"><span class="check">✦</span><span>Download aplikasi Android langsung (APK)</span></div>
       </div>
-      <a class="buy" href="#" onclick="alert('Checkout QRIS akan dihubungkan setelah payment gateway dan backend disiapkan.'); return false;">BELI SEKARANG</a>
-      <p class="note">Checkout & pembayaran QRIS otomatis akan diaktifkan pada tahap integrasi berikutnya.</p>
-    </section>
+      <a class="buy" href="#" onclick="alert('Checkout QRIS otomatis akan diaktifkan setelah integrasi payment gateway.');return false;">BELI SEKARANG</a>
+      <p class="note">Pembayaran QRIS dan akses download otomatis segera dihubungkan.</p>
+    </article>
 
-    <section class="section">
-      <h2>CARA PEMBELIAN</h2>
-      <div class="steps">
-        <div class="step"><b>01 — Checkout</b><p>Tekan tombol beli untuk menuju halaman pembayaran.</p></div>
-        <div class="step"><b>02 — Bayar QRIS</b><p>Scan QRIS pada halaman pembayaran dan selesaikan transaksi.</p></div>
-        <div class="step"><b>03 — Download APK</b><p>Setelah pembayaran terverifikasi, link download aplikasi akan tersedia.</p></div>
+    <article class="card">
+      <div class="visual">
+        <div><div class="logo">✦ V-ST4RS</div><div class="tagline">iOS EDITION</div></div>
       </div>
-    </section>
+      <div class="product-head">
+        <h2>V-ST4RS iOS</h2>
+        <span class="status soon">SEGERA HADIR</span>
+      </div>
+      <p class="desc">Versi untuk iPhone dan iPad sedang dipersiapkan.</p>
+      <div class="price">Coming Soon</div>
+      <div class="features">
+        <div class="feature"><span class="check">✦</span><span>Direncanakan untuk iPhone</span></div>
+        <div class="feature"><span class="check">✦</span><span>Direncanakan untuk iPad</span></div>
+        <div class="feature"><span class="check">✦</span><span>Informasi peluncuran akan diumumkan</span></div>
+      </div>
+      <div class="disabled">SEGERA HADIR</div>
+      <p class="note">Produk iOS belum tersedia untuk dibeli atau diunduh.</p>
+    </article>
+  </section>
 
-    <div class="footer">
-      <div>✦ V-ST4RS</div>
-      <p>PERCANTIK VIDEO AFFILIATE</p>
-      <p>Butuh bantuan? <a class="wa" href="https://wa.me/628161844494" target="_blank" rel="noopener">Hubungi Admin WhatsApp</a></p>
+  <section class="how">
+    <h2 class="section-title">CARA PEMBELIAN ANDROID</h2>
+    <div class="steps">
+      <div class="step"><b>01 — Checkout</b><p>Pilih V-ST4RS Android dan lanjutkan ke pembayaran.</p></div>
+      <div class="step"><b>02 — Bayar QRIS</b><p>Scan QRIS menggunakan DANA atau aplikasi pembayaran yang mendukung QRIS.</p></div>
+      <div class="step"><b>03 — Download APK</b><p>Setelah pembayaran terverifikasi, pembeli memperoleh akses download APK.</p></div>
     </div>
-  </main>
+  </section>
+
+  <footer>
+    <div>✦ V-ST4RS STORE</div>
+    <p>PERCANTIK VIDEO AFFILIATE</p>
+    <p>Butuh bantuan? <a href="https://wa.me/628161844494" target="_blank" rel="noopener">Hubungi Admin WhatsApp</a></p>
+  </footer>
+</main>
 </body>
 </html>
