@@ -1,114 +1,477 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>V-ST4RS STORE | Percantik Video Affiliate</title>
-  <meta name="description" content="V-ST4RS Store — aplikasi peningkat video untuk Android. Versi iOS segera hadir.">
-  <meta name="theme-color" content="#080808">
-  <style>
-    :root{--gold:#d9b568;--gold2:#f2d994;--bg:#080808;--panel:#121212;--muted:#aaa}
-    *{box-sizing:border-box}
-    body{margin:0;background:radial-gradient(ellipse at 50% -12%,#392b16 0,#15120d 28%,var(--bg) 67%);color:#f7f4ed;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-    .wrap{max-width:760px;margin:auto;padding:24px 18px 48px}
-    .brand{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:950;letter-spacing:2px}
-    .star{color:var(--gold2);font-size:26px}
-    .eyebrow{display:inline-block;margin-top:28px;padding:7px 12px;border:1px solid #69552e;border-radius:99px;color:var(--gold2);font-size:11px;letter-spacing:1.4px}
-    h1{font-size:clamp(36px,8vw,58px);line-height:1.02;letter-spacing:-1.8px;margin:17px 0}
-    h1 span{color:var(--gold2)}
-    .lead{max-width:560px;color:#c8c4ba;line-height:1.7;font-size:15px}
-    .section-title{margin:32px 0 14px;font-size:17px;letter-spacing:.4px}
-    .products{display:grid;grid-template-columns:1fr;gap:14px}
-    .card{border:1px solid #44371f;border-radius:22px;padding:19px;background:linear-gradient(145deg,#1b1a17,#101010 65%);box-shadow:0 16px 45px #0007}
-    .visual{height:165px;border-radius:16px;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at center,#49391d,#191714 58%,#0b0b0b);border:1px solid #66502a}
-    .logo{font-size:34px;font-weight:1000;letter-spacing:2px;color:var(--gold2);text-shadow:0 0 25px #d9b56855}
-    .tagline{font-size:10px;letter-spacing:2px;margin-top:8px;color:#eee}
-    .product-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px}
-    h2{font-size:21px;margin:0}
-    .status{white-space:nowrap;border-radius:99px;padding:6px 10px;font-size:10px;font-weight:850;letter-spacing:.7px}
-    .available{background:#193322;color:#8fe0a7;border:1px solid #2d6941}
-    .soon{background:#332817;color:var(--gold2);border:1px solid #765b2c}
-    .desc{color:#bdb9b0;font-size:13px;line-height:1.6;margin:9px 0 16px}
-    .price{color:var(--gold2);font-size:24px;font-weight:900;margin:12px 0}
-    .features{display:grid;gap:10px;margin:17px 0 20px}
-    .feature{display:flex;gap:10px;font-size:13px;color:#e5e0d5;line-height:1.4}
-    .check{color:var(--gold2);font-weight:900}
-    .buy{display:block;width:100%;padding:15px;border:0;border-radius:13px;text-align:center;text-decoration:none;font-size:15px;font-weight:950;letter-spacing:.4px;color:#171108;background:linear-gradient(135deg,var(--gold2),#bd8d37);cursor:pointer}
-    .disabled{display:block;width:100%;padding:15px;border-radius:13px;text-align:center;font-size:14px;font-weight:850;letter-spacing:.5px;color:#d7c28f;background:#292216;border:1px solid #594523}
-    .note{color:#888;font-size:11px;text-align:center;line-height:1.6;margin:10px 3px 0}
-    .how{margin-top:30px}
-    .steps{display:grid;gap:11px}
-    .step{border:1px solid #292929;background:#111;border-radius:15px;padding:15px}
-    .step b{color:var(--gold2);display:block;margin-bottom:4px;font-size:13px}
-    .step p{color:#aaa;margin:0;font-size:12px;line-height:1.6}
-    footer{margin-top:34px;border-top:1px solid #292929;padding-top:20px;text-align:center;color:#777;font-size:12px}
-    footer a{color:var(--gold2);text-decoration:none}
-    @media(min-width:620px){.products{grid-template-columns:1fr 1fr}.card{padding:17px}.visual{height:150px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V-ST4RS STORE | Official</title>
+<meta name="description" content="V-ST4RS - Percantik Video Affiliate. Sekali bayar Rp35.000, akses selamanya.">
+<meta name="theme-color" content="#080808">
+
+<style>
+:root {
+  --gold:#e4c477;
+  --gold2:#bd913e;
+  --bg:#080808;
+}
+* {box-sizing:border-box}
+
+body {
+  margin:0;
+  background:radial-gradient(ellipse at 50% -10%,#392b16 0,#15120d 30%,#080808 70%);
+  color:#fff;
+  font-family:Arial,sans-serif;
+}
+
+.container {
+  max-width:850px;
+  margin:auto;
+  padding:24px 18px 45px;
+}
+
+header {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:21px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+
+.star {
+  color:var(--gold);
+  font-size:28px;
+}
+
+.hero {
+  text-align:center;
+  padding:55px 5px 35px;
+}
+
+.label {
+  display:inline-block;
+  border:1px solid #725a2c;
+  color:var(--gold);
+  border-radius:30px;
+  padding:8px 14px;
+  font-size:10px;
+  letter-spacing:2px;
+}
+
+h1 {
+  font-size:clamp(37px,8vw,62px);
+  line-height:1.05;
+  margin:20px 0 12px;
+  letter-spacing:-2px;
+}
+
+.gold {color:var(--gold)}
+
+.hero p {
+  color:#bbb;
+  font-size:14px;
+  line-height:1.7;
+  max-width:520px;
+  margin:auto;
+}
+
+.section-title {
+  font-size:17px;
+  letter-spacing:1px;
+  margin:20px 0 15px;
+}
+
+.products {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+}
+
+.card {
+  background:linear-gradient(145deg,#1b1a17,#101010);
+  border:1px solid #514125;
+  border-radius:22px;
+  padding:20px;
+  box-shadow:0 15px 40px #0008;
+}
+
+.visual {
+  height:175px;
+  border-radius:16px;
+  border:1px solid #66502a;
+  background:radial-gradient(circle,#48371c,#17130d 65%,#090909);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.logo {
+  font-size:34px;
+  font-weight:1000;
+  letter-spacing:2px;
+  color:var(--gold);
+  text-shadow:0 0 25px #d9b56866;
+}
+
+.tagline {
+  font-size:10px;
+  letter-spacing:3px;
+  margin-top:8px;
+}
+
+.product-head {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+  margin-top:20px;
+}
+
+h2 {
+  font-size:21px;
+  margin:0;
+}
+
+.status {
+  font-size:10px;
+  font-weight:bold;
+  padding:7px 11px;
+  border-radius:30px;
+  white-space:nowrap;
+}
+
+.available {
+  color:#91e5a8;
+  background:#173322;
+  border:1px solid #326b43;
+}
+
+.soon {
+  color:var(--gold);
+  background:#332817;
+  border:1px solid #765b2c;
+}
+
+.desc {
+  color:#bbb;
+  font-size:13px;
+  line-height:1.7;
+}
+
+.price {
+  color:var(--gold);
+  font-size:34px;
+  font-weight:900;
+  margin:20px 0 5px;
+}
+
+.lifetime {
+  color:#91e5a7;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.features {
+  display:grid;
+  gap:13px;
+  margin:22px 0;
+}
+
+.feature {
+  display:flex;
+  gap:10px;
+  font-size:13px;
+  color:#e5e0d5;
+}
+
+.check {
+  color:var(--gold);
+  font-weight:bold;
+}
+
+.buy {
+  display:block;
+  width:100%;
+  padding:16px;
+  border-radius:13px;
+  background:linear-gradient(135deg,#f2dc9e,#bd8d37);
+  color:#171108;
+  text-decoration:none;
+  text-align:center;
+  font-size:15px;
+  font-weight:900;
+  border:0;
+  cursor:pointer;
+}
+
+.buy:active {
+  transform:scale(.98);
+}
+
+.disabled {
+  padding:16px;
+  border-radius:13px;
+  text-align:center;
+  color:var(--gold);
+  background:#292216;
+  border:1px solid #594523;
+  font-weight:bold;
+}
+
+.note {
+  text-align:center;
+  color:#888;
+  font-size:11px;
+  line-height:1.6;
+  margin-top:12px;
+}
+
+.steps {
+  display:grid;
+  gap:12px;
+}
+
+.step {
+  background:#121212;
+  border:1px solid #292929;
+  border-radius:15px;
+  padding:17px;
+}
+
+.step b {
+  color:var(--gold);
+  font-size:13px;
+}
+
+.step p {
+  color:#aaa;
+  font-size:12px;
+  line-height:1.6;
+  margin:7px 0 0;
+}
+
+footer {
+  text-align:center;
+  border-top:1px solid #292929;
+  margin-top:40px;
+  padding-top:22px;
+  color:#888;
+  font-size:12px;
+}
+
+footer a {
+  color:var(--gold);
+  text-decoration:none;
+}
+
+@media(min-width:650px) {
+  .products {
+    grid-template-columns:1fr 1fr;
+  }
+}
+</style>
 </head>
+
 <body>
-<main class="wrap">
-  <div class="brand"><span class="star">✦</span> V-ST4RS STORE</div>
-  <div class="eyebrow">OFFICIAL DIGITAL STORE</div>
-  <h1>PERCANTIK<br><span>VIDEO AFFILIATE.</span></h1>
-  <p class="lead">Temukan V-ST4RS, aplikasi peningkat video dengan pengalaman simpel dan tampilan premium. Pilih platform perangkatmu.</p>
+<main class="container">
 
-  <h2 class="section-title">PILIH PRODUK</h2>
-  <section class="products">
-    <article class="card">
-      <div class="visual">
-        <div><div class="logo">✦ V-ST4RS</div><div class="tagline">ANDROID EDITION</div></div>
-      </div>
-      <div class="product-head">
-        <h2>V-ST4RS Android</h2>
-        <span class="status available">TERSEDIA</span>
-      </div>
-      <p class="desc">Aplikasi peningkat video untuk perangkat Android.</p>
-      <div class="price">Rp 15.000 / 1 bulan </div>
-      <div class="features">
-        <div class="feature"><span class="check">✦</span><span>Export 720p, 1080p & 2K</span></div>
-        <div class="feature"><span class="check">✦</span><span>Pilih hingga 100 video dalam antrean</span></div>
-        <div class="feature"><span class="check">✦</span><span>Pengaturan enhancement yang mudah</span></div>
-        <div class="feature"><span class="check">✦</span><span>Download aplikasi Android langsung (APK)</span></div>
-      </div>
-      <a class="buy" href="#" onclick="alert('Checkout QRIS otomatis akan diaktifkan setelah integrasi payment gateway.');return false;">BELI SEKARANG</a>
-      <p class="note">Pembayaran QRIS dan akses download otomatis segera dihubungkan.</p>
-    </article>
+<header>
+  <span class="star">✦</span>
+  V-ST4RS STORE
+</header>
 
-    <article class="card">
-      <div class="visual">
-        <div><div class="logo">✦ V-ST4RS</div><div class="tagline">iOS EDITION</div></div>
-      </div>
-      <div class="product-head">
-        <h2>V-ST4RS iOS</h2>
-        <span class="status soon">SEGERA HADIR</span>
-      </div>
-      <p class="desc">Versi untuk iPhone dan iPad sedang dipersiapkan.</p>
-      <div class="price">Coming Soon</div>
-      <div class="features">
-        <div class="feature"><span class="check">✦</span><span>Direncanakan untuk iPhone</span></div>
-        <div class="feature"><span class="check">✦</span><span>Direncanakan untuk iPad</span></div>
-        <div class="feature"><span class="check">✦</span><span>Informasi peluncuran akan diumumkan</span></div>
-      </div>
-      <div class="disabled">SEGERA HADIR</div>
-      <p class="note">Produk iOS belum tersedia untuk dibeli atau diunduh.</p>
-    </article>
-  </section>
+<section class="hero">
+  <div class="label">OFFICIAL DIGITAL STORE</div>
 
-  <section class="how">
-    <h2 class="section-title">CARA PEMBELIAN ANDROID</h2>
-    <div class="steps">
-      <div class="step"><b>01 — Checkout</b><p>Pilih V-ST4RS Android dan lanjutkan ke pembayaran.</p></div>
-      <div class="step"><b>02 — Bayar QRIS</b><p>Scan QRIS menggunakan DANA atau aplikasi pembayaran yang mendukung QRIS.</p></div>
-      <div class="step"><b>03 — Download APK</b><p>Setelah pembayaran terverifikasi, pembeli memperoleh akses download APK.</p></div>
+  <h1>
+    PERCANTIK<br>
+    <span class="gold">VIDEO AFFILIATE.</span>
+  </h1>
+
+  <p>
+    Tingkatkan kualitas video affiliate kamu dengan V-ST4RS.
+    Tampilan simpel, fitur praktis, dan hasil video lebih menarik.
+  </p>
+</section>
+
+<h2 class="section-title">PILIH PRODUK</h2>
+
+<section class="products">
+
+<!-- PRODUK ANDROID -->
+<article class="card">
+
+  <div class="visual">
+    <div>
+      <div class="logo">✦ V-ST4RS</div>
+      <div class="tagline">ANDROID EDITION</div>
     </div>
-  </section>
+  </div>
 
-  <footer>
-    <div>✦ V-ST4RS STORE</div>
-    <p>PERCANTIK VIDEO AFFILIATE</p>
-    <p>Butuh bantuan? <a href="https://wa.me/628161844494" target="_blank" rel="noopener">Hubungi Admin WhatsApp</a></p>
-  </footer>
+  <div class="product-head">
+    <h2>V-ST4RS Android</h2>
+    <span class="status available">TERSEDIA</span>
+  </div>
+
+  <p class="desc">
+    Aplikasi peningkat video untuk membantu membuat
+    konten affiliate lebih menarik.
+  </p>
+
+  <div class="price">Rp35.000</div>
+  <div class="lifetime">
+    ✦ SEKALI BAYAR • AKSES SELAMANYA
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <span class="check">✦</span>
+      <span>Export video 720p, 1080p & 2K</span>
+    </div>
+
+    <div class="feature">
+      <span class="check">✦</span>
+      <span>Pilih hingga 100 video</span>
+    </div>
+
+    <div class="feature">
+      <span class="check">✦</span>
+      <span>Pengaturan enhancement video</span>
+    </div>
+
+    <div class="feature">
+      <span class="check">✦</span>
+      <span>Antrean pemrosesan video</span>
+    </div>
+
+    <div class="feature">
+      <span class="check">✦</span>
+      <span>Akses selamanya tanpa langganan</span>
+    </div>
+  </div>
+
+  <a
+    class="buy"
+    href="#"
+    onclick="alert('Checkout QRIS Midtrans akan segera dihubungkan.');return false;"
+  >
+    BELI SEKARANG
+  </a>
+
+  <p class="note">
+    Pembayaran QRIS melalui Midtrans.
+    Download tersedia setelah pembayaran terverifikasi.
+  </p>
+
+</article>
+
+<!-- PRODUK IOS -->
+<article class="card">
+
+  <div class="visual">
+    <div>
+      <div class="logo">✦ V-ST4RS</div>
+      <div class="tagline">iOS EDITION</div>
+    </div>
+  </div>
+
+  <div class="product-head">
+    <h2>V-ST4RS iOS</h2>
+    <span class="status soon">SEGERA HADIR</span>
+  </div>
+
+  <p class="desc">
+    V-ST4RS untuk iPhone dan iPad sedang dipersiapkan.
+  </p>
+
+  <div class="price">Coming Soon</div>
+
+  <div class="features">
+    <div class="feature">
+      <span class="check">✦</span>
+      <span>Direncanakan untuk iPhone</span>
+    </div>
+
+    <div class="feature">
+      <span class="check">✦</span>
+      <span>Direncanakan untuk iPad</span>
+    </div>
+
+    <div class="feature">
+      <span class="check">✦</span>
+      <span>Informasi peluncuran menyusul</span>
+    </div>
+  </div>
+
+  <div class="disabled">
+    SEGERA HADIR
+  </div>
+
+  <p class="note">
+    Produk iOS belum tersedia untuk dibeli.
+  </p>
+
+</article>
+
+</section>
+
+<section style="margin-top:35px">
+
+  <h2 class="section-title">CARA PEMBELIAN</h2>
+
+  <div class="steps">
+
+    <div class="step">
+      <b>01 — PILIH PRODUK</b>
+      <p>
+        Pilih V-ST4RS Android dengan harga Rp35.000.
+      </p>
+    </div>
+
+    <div class="step">
+      <b>02 — BAYAR QRIS</b>
+      <p>
+        Scan QRIS melalui DANA atau aplikasi pembayaran
+        lain yang mendukung QRIS.
+      </p>
+    </div>
+
+    <div class="step">
+      <b>03 — DOWNLOAD APK</b>
+      <p>
+        Setelah pembayaran terverifikasi, akses download
+        APK akan diberikan.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div style="font-size:20px;color:#e4c477;font-weight:bold">
+    ✦ V-ST4RS STORE
+  </div>
+
+  <p>PERCANTIK VIDEO AFFILIATE</p>
+
+  <p>
+    Butuh bantuan?
+    <a
+      href="https://wa.me/628161844494"
+      target="_blank"
+      rel="noopener"
+    >
+      Hubungi Admin WhatsApp
+    </a>
+  </p>
+
+  <p>© 2026 V-ST4RS. All Rights Reserved.</p>
+
+</footer>
+
 </main>
 </body>
 </html>
